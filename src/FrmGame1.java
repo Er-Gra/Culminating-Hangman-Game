@@ -7,7 +7,8 @@ import java.util.logging.Logger;
 /*
  * June 7th, 2020
  * Erika Graham
- * Hangman Game Final Project
+ * Hangman Game Project
+ * ...It got too complicated for me. I couldn't finish it.
  */
 
 public class FrmGame1 extends javax.swing.JFrame {
