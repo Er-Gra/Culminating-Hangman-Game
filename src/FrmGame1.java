@@ -35,7 +35,6 @@ public class FrmGame1 extends javax.swing.JFrame {
         lblLivesOut = new javax.swing.JLabel();
         txtWordIn = new javax.swing.JTextField();
         btnStart = new javax.swing.JButton();
-        lblTopicTxt = new javax.swing.JLabel();
         lblTopicOut = new javax.swing.JLabel();
         lblLengthTxt = new javax.swing.JLabel();
         lblLengthOut = new javax.swing.JLabel();
@@ -77,9 +76,6 @@ public class FrmGame1 extends javax.swing.JFrame {
             }
         });
 
-        lblTopicTxt.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        lblTopicTxt.setText("Topic:");
-
         lblTopicOut.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
 
         lblLengthTxt.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
@@ -107,7 +103,7 @@ public class FrmGame1 extends javax.swing.JFrame {
             }
         });
 
-        lblRead.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblRead.setFont(new java.awt.Font("Webdings", 0, 3)); // NOI18N
         lblRead.setText("The word is...");
 
         lblWordToComplete.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -137,6 +133,9 @@ public class FrmGame1 extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblRead, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(lblLivesTxt)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,37 +145,39 @@ public class FrmGame1 extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(lblLivesOut, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblTopicTxt)
-                                .addGap(18, 18, 18)
                                 .addComponent(lblTopicOut, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnStart, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtWordIn, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(76, 76, 76)
-                        .addComponent(btnCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(174, 174, 174))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(lblLengthTxt)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblLengthOut, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(lblRead, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(lblWordToComplete)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblWordToCompleteOut, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblInstructions1, javax.swing.GroupLayout.PREFERRED_SIZE, 751, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(265, 265, 265)
+                                .addComponent(lblInstructions1, javax.swing.GroupLayout.PREFERRED_SIZE, 751, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(lblInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 751, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(111, 111, 111)
-                                .addComponent(jLabel1)))
-                        .addGap(0, 26, Short.MAX_VALUE))))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(txtWordIn, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(62, 62, 62)
+                                        .addComponent(btnCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(21, 21, 21))
+                                    .addComponent(jLabel1))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(lblLengthTxt)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(lblLengthOut, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(lblWordToComplete)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(lblWordToCompleteOut, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnStart, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(413, 413, 413)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,7 +190,6 @@ public class FrmGame1 extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblLivesTxt)
                     .addComponent(lblLivesOut, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblTopicTxt)
                     .addComponent(lblTopicOut, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -204,9 +204,9 @@ public class FrmGame1 extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblWordToComplete, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblWordToCompleteOut, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(lblRead, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblRead, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
                 .addComponent(lblInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblInstructions1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -226,7 +226,7 @@ public class FrmGame1 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 764, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,7 +242,7 @@ public class FrmGame1 extends javax.swing.JFrame {
     File dataFile = new File("Words.dat");
     FileReader in;
     BufferedReader readFile;
-    String wordsRead [] = new String [11];
+    String wordsRead [] = new String [10];
     String randomWord;
     int randomNumber =0;
     //reads from the file and checks the file is actually there.
@@ -251,7 +251,7 @@ public class FrmGame1 extends javax.swing.JFrame {
             readFile = new BufferedReader(in);
             
             //stores the words into an array
-                for (int i=0;i<11;i++){
+                for (int i=0;i<10;i++){
                     wordsRead[i]=readFile.readLine();
                 }
             
@@ -267,9 +267,6 @@ public class FrmGame1 extends javax.swing.JFrame {
         randomNumber = (int) Math.round(Math.random() * 9 + 1 + 0);
         //random word is stored here
         randomWord = wordsRead[randomNumber];
-        //the category is stored to display here
-        String category = wordsRead[0];
-        lblTopicOut.setText(category);
         
         return randomWord;
         /*
@@ -365,7 +362,6 @@ public class FrmGame1 extends javax.swing.JFrame {
         int lengthOfWord = wordToGuess.length();
         int lives = Integer.parseInt(lblLivesOut.getText());
         char wordToChar = '@';
-        char lettersEntered [] = new char [28];
         char wordDivided [] = new char [lengthOfWord];
         
         
@@ -379,7 +375,6 @@ public class FrmGame1 extends javax.swing.JFrame {
             lblInstructions.setText("Please click Start New Game and enter a single letter, not a number nor a word.");
         } else {
             wordToChar = wordInput.charAt(0);
-            lettersEntered[clicked]=wordToChar;
         }
 
         //check if the letter is in the word
@@ -388,11 +383,11 @@ public class FrmGame1 extends javax.swing.JFrame {
         if (found==false){ //if the letter is not in the string...
             lblInstructions1.setText("This letter is not in the word.");
             restLives(lives);
-            //find a way to put the letter used and while maintaining previous values
-
-
+            //Display letters entered by the user
+            String charToWord = String.valueOf(wordToChar);
+            txtALettersUsed.setText(charToWord+", ");
             //maybe create an array for all the past letters and print them all <<<<<<------
-            txtALettersUsed.setText(wordInput+",  ");
+//            txtALettersUsed.setText(wordInput+",  ");
 
         } else if (found == true){   //if the letter is in the word
             int index = wordToGuess.indexOf(wordToChar); //position/index
@@ -465,7 +460,6 @@ public class FrmGame1 extends javax.swing.JFrame {
     private javax.swing.JLabel lblRead;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTopicOut;
-    private javax.swing.JLabel lblTopicTxt;
     private javax.swing.JLabel lblWordToComplete;
     private javax.swing.JLabel lblWordToCompleteOut;
     private javax.swing.JTextArea txtALettersUsed;
